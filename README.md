@@ -38,10 +38,10 @@ install.packages('PACKAGE_NAME_HERE')
 * R
 * R Studio - IDE
 * Excel - Exploratory Analysis, Basic Pre-Processing, Pivot Tables
-* Turing Cluster at WPI - Used for high-performance computing required for Random Forest and KNN. More information can be found (here)[http://arc.wpi.edu/resources/hardware/hpc-clusters/]
+* Turing Cluster at WPI - Used for high-performance computing required for Random Forest and KNN. More information can be found [here](http://arc.wpi.edu/resources/hardware/hpc-clusters/)
 
 ## Project Report
-A comprehensive report of what this project entails can be found (here)[https://github.com/mihinsumaria/H1B-Case-Status-Prediction/blob/master/DS%20502%20Report.pdf].
+A comprehensive report of what this project entails can be found [here](https://github.com/mihinsumaria/H1B-Case-Status-Prediction/blob/master/DS%20502%20Report.pdf).
 
 ## Authors
 * Mihin Sumaria
