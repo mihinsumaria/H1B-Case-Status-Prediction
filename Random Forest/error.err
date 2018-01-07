@@ -1,0 +1,11 @@
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+Loading required package: lattice
+Loading required package: ggplot2
+
+Attaching package: ‘ggplot2’
+
+The following object is masked from ‘package:randomForest’:
+
+    margin
+

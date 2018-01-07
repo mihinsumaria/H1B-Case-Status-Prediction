@@ -1,0 +1,3 @@
+LCA_CASE_NUMBER: Unique ID for application
+STATUS - Certified, Certified Withdrawn, Denied, Withdrawn (Target variable)
+LCA_CASE_SUBMIT - Date of submission, we could use the month and time of 

@@ -1,0 +1,8 @@
+library(randomForest)
+library(caret)
+library(e1071)
+train<-read.csv("train.csv")
+test<-read.csv("test.csv")
+train_rf<-randomForest(STATUS~., data = train)
+preds<-predict(train_rf, test)
+confusionMatrix(preds, test$STATUS)

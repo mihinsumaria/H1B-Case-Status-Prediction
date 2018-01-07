@@ -1,0 +1,54 @@
+
+R version 3.4.1 (2017-06-30) -- "Single Candle"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(randomForest)
+> library(caret)
+> library(e1071)
+> train<-read.csv("train.csv")
+> test<-read.csv("test.csv")
+> train_rf<-randomForest(STATUS~., data = train)
+> preds<-predict(train_rf, test)
+> confusionMatrix(preds, test$STATUS)
+Confusion Matrix and Statistics
+
+               Reference
+Prediction      CERTIFIED NOT CERTIFIED
+  CERTIFIED        381505         38026
+  NOT CERTIFIED       159         17193
+                                          
+               Accuracy : 0.9126          
+                 95% CI : (0.9118, 0.9134)
+    No Information Rate : 0.8736          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.44            
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.9996          
+            Specificity : 0.3114          
+         Pos Pred Value : 0.9094          
+         Neg Pred Value : 0.9908          
+             Prevalence : 0.8736          
+         Detection Rate : 0.8732          
+   Detection Prevalence : 0.9603          
+      Balanced Accuracy : 0.6555          
+                                          
+       'Positive' Class : CERTIFIED       
+                                          
+> 
